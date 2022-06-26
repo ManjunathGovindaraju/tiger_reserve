@@ -8,39 +8,49 @@ class DrawerOptions extends StatelessWidget {
     return Drawer(
       child: ListView(
         padding: EdgeInsets.zero,
-        children: const <Widget>[
+        children: <Widget>[
           SizedBox(
             height: 100,
             child: DrawerHeader(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.blue,
               ),
-              child: Text(
-                'Save Tiger',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 30,
-                ),
+              child: Row(
+                children: const [
+                  Icon(
+                    Icons.arrow_back_rounded,
+                  ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Text(
+                    'Save Tiger',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 25,
+                    ),
+                  ),
+                ],
               ),
             ),
           ),
-          ListTile(
+          const ListTile(
             leading: Icon(Icons.info_outline_rounded),
             title: Text('About Us'),
           ),
-          ListTile(
+          const ListTile(
             leading: Icon(Icons.warning_amber_rounded),
             title: Text('Threats'),
           ),
-          ListTile(
+          const ListTile(
             leading: Icon(Icons.handshake_rounded),
             title: Text('Join Us'),
           ),
-          ListTile(
+          const ListTile(
             leading: Icon(Icons.attach_money_rounded),
             title: Text('Donate'),
           ),
-          ListTile(
+          const ListTile(
             leading: Icon(Icons.help_center_rounded),
             title: Text('Help'),
           ),

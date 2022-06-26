@@ -7,28 +7,28 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
-      children: const [
+      children: [
         Container(
           height: 300,
-          child: CarouselWithIndicatorDemo(),
+          child: const CarouselWithIndicatorDemo(),
         ),
         // Content
-        SizedBox(
+        const SizedBox(
           height: 10,
         ),
-        MainPageHeader(),
-        SizedBox(
+        const MainPageHeader(),
+        const SizedBox(
           height: 10,
         ),
-        MainPageContent(),
-        SizedBox(
+        const MainPageContent(),
+        const SizedBox(
           height: 30,
         ),
-        MainPageImageWithContent(),
-        SizedBox(
+        const MainPageImageWithContent(),
+        const SizedBox(
           height: 10,
         ),
-        MainPageButtons(),
+        const MainPageButtons(),
       ],
     );
     /* return Column(

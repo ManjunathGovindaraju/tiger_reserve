@@ -17,11 +17,20 @@ class MyApp extends StatelessWidget {
         drawer: const DrawerOptions(),
         appBar: AppBar(
           backgroundColor: Colors.black,
-          title: const Text(
-            "TigersMatter",
+          title: Center(
+            child: Image.asset(
+              'assets/images/logo.png',
+              fit: BoxFit.fitHeight,
+              width: 200,
+            ),
           ),
           actions: const [
-            Icon(Icons.account_circle_rounded),
+            CircleAvatar(
+              radius: 25,
+              backgroundImage: AssetImage(
+                'assets/images/profile.png',
+              ),
+            ),
           ],
         ),
         body: const HomePage(),
