@@ -1,3 +1,4 @@
+import 'package:animal_reserve/drawer_options.dart';
 import 'package:animal_reserve/main_page.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        drawer: const Drawer(),
+        drawer: const DrawerOptions(),
         appBar: AppBar(
           backgroundColor: Colors.black,
           title: const Text(
@@ -22,10 +23,6 @@ class MyApp extends StatelessWidget {
           actions: const [
             Icon(Icons.account_circle_rounded),
           ],
-        ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {},
-          child: const Icon(Icons.add),
         ),
         body: const HomePage(),
       ),
