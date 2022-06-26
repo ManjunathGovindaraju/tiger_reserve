@@ -6,7 +6,32 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return ListView(
+      children: const [
+        Container(
+          height: 300,
+          child: CarouselWithIndicatorDemo(),
+        ),
+        // Content
+        SizedBox(
+          height: 10,
+        ),
+        MainPageHeader(),
+        SizedBox(
+          height: 10,
+        ),
+        MainPageContent(),
+        SizedBox(
+          height: 30,
+        ),
+        MainPageImageWithContent(),
+        SizedBox(
+          height: 10,
+        ),
+        MainPageButtons(),
+      ],
+    );
+    /* return Column(
       children: const [
         // Image Carousel
         Expanded(
@@ -27,7 +52,7 @@ class HomePage extends StatelessWidget {
         ),
         MainPageButtons(),
       ],
-    );
+    );*/
   }
 }
 
